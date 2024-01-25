@@ -57,7 +57,7 @@ class Auth extends PX_Controller {
 					'email' => $user_data_member->email,
 					);
 				$this->session->set_userdata('peminjam',$data_user);
-				$this->returnJson(array('status' => 'ok','msg' => 'Login berhasil, anda akan di alihkan.','redirect' => base_url('member_system/profile')));
+				$this->returnJson(array('status' => 'ok','msg' => 'Login berhasil, anda akan di alihkan.','redirect' => base_url('member/dashboard')));
 			}
 			else
 				$this->returnJson(array('status' => 'error','msg' => 'Login gagal, password anda salah.'));

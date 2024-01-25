@@ -48,7 +48,7 @@
   <div id="wrapper">
 
     <!-- Navigation -->
-    <nav class="navbar navbar-default navbar-static-top" role="navigation" style="margin-bottom: 0">
+    <nav class="navbar bg-primary navbar-static-top" role="navigation" style="margin-bottom: 0">
       <div class="navbar-header">
         <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
           <span class="sr-only">Toggle navigation</span>
@@ -56,7 +56,7 @@
           <span class="icon-bar"></span>
           <span class="icon-bar"></span>
         </button>
-        <a class="navbar-brand" href="#">Selamat Datang, <?php echo $userdata['name'] ?></a>
+        <a class="navbar-brand" style="color: #fff;!important" href="#">Selamat Datang, <?php echo $userdata['name'] ?></a>
       </div>
       <!-- /.navbar-header -->
 
@@ -85,11 +85,11 @@
         <div class="sidebar-nav navbar-collapse">
           <ul class="nav" id="s">
             <li>
-              <a href=""><i class="fa fa-dashboard fa-fw"></i> Dashboard</a>
+              <a href="<?php echo base_url('admin/dashboard') ?>"><i class="fa fa-dashboard fa-fw"></i> Dashboard</a>
             </li>
             <li>
               <a href="#"><i class="fa fa-users fa-fw"></i> Data Peminjam<span class="fa arrow"></span></a></a>
-              <ul class="nav nav-second-level">
+              <ul class="nav nav-second-level hidden">
                 <li>
                   <a href="<?php echo base_url('admin_system/peminjam') ?>"><i class="fa fa-eye fa-fw"></i> Lihat Data Peminjam</a>
                 </li>
@@ -100,7 +100,7 @@
             </li>
             <li>
               <a href="#"><i class="fa fa-archive fa-fw"></i> Data Barang<span class="fa arrow"></span></a></a>
-              <ul class="nav nav-second-level">
+              <ul class="nav nav-second-level hidden">
                 <li>
                   <a href="<?php echo base_url('admin_system/barang') ?>"><i class="fa fa-eye fa-fw"></i> Lihat Data Barang</a>
                 </li>
@@ -117,7 +117,7 @@
             </li>
             <li>
               <a href="#"><i class="fa fa-flag fa-fw"></i> Generate Laporan<span class="fa arrow"></span></a></a>
-              <ul class="nav nav-second-level">
+              <ul class="nav nav-second-level hidden">
                 <li>
                   <a href="<?php echo base_url('admin_system/laporan_pinjam') ?>"><i class="fa fa-flag-checkered fa-fw"></i> Barang Yang Sedang Dipinjam</a>
                 </li>
@@ -136,6 +136,7 @@
           </ul>
         </div>
         <!-- /.sidebar-collapse -->
+        
       </div>
       <!-- /.navbar-static-side -->
     </nav>
@@ -274,6 +275,10 @@
         });
       }
     });
+
+    $('.nav > li > a').on('click', function(e) {
+      $(this).next().toggleClass('hidden')
+    })
   </script>
 
 </body>

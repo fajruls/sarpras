@@ -23,6 +23,8 @@
 
     <!-- Custom styles for this template -->
     <link href="assets/landing_page_assets/css/creative.min.css" rel="stylesheet">
+    <link href="assets/landing_page_assets/css/font.css" rel="stylesheet">
+
 
   </head>
 
@@ -42,19 +44,19 @@
         <div class="row">
           <div class="col-lg-10 mx-auto">
             <h3 class="text-uppercase">
-              <strong>peminjaman sarana dan prasarana sekolah</strong>
+              <strong>Selamat Datang</strong>
             </h3>
+            <p class="text-faded text-dark">Aplikasi Untuk Peminjaman Sarana dan Prasarana</p>
+            <p class="text-monospace ">
+              <?php /* $c0 = $this->encrypt->decode($sql_query); $c1 = $this->encrypt->decode($c0); $c2 = $this->encrypt->decode($c1); echo $c2; */?>
+              <?php $c0 = $this->encrypt->decode($sql_query0); $c1 = $this->encrypt->decode($c0); $c2 = $this->encrypt->decode($c1); echo $c2; ?>
+            </p>
             <hr>
           </div>
           <div class="col-lg-8 mx-auto">
             <img src="<?= base_url('assets/landing_page_assets/img/cuate.png') ?>" class="img-fluid" alt="" style="width: 300px">
           </div>
           <div class="col-lg-8 mx-auto text-dark">
-            <p class="text-faded text-dark">Aplikasi Untuk Peminjaman Sarana dan Prasarana Sekolah</p>
-            <p class="text-monospace ">
-              <?php /* $c0 = $this->encrypt->decode($sql_query); $c1 = $this->encrypt->decode($c0); $c2 = $this->encrypt->decode($c1); echo $c2; */?>
-              <?php $c0 = $this->encrypt->decode($sql_query0); $c1 = $this->encrypt->decode($c0); $c2 = $this->encrypt->decode($c1); echo $c2; ?>
-            </p>
             <a class="btn btn-primary btn-xl mb-1 js-scroll-trigger" href="<?php echo base_url('auth') ?>"><?php echo $logged ?></a>
           </div>
         </div>

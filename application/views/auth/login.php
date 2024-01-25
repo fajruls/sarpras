@@ -37,13 +37,13 @@
     <!-- old login form -->
     <div class="container">
         <div class="row">
-            <div class="col-md-5 col-md-offset-3">
+            <div class="col-md-6 col-md-offset-3">
                 <div class="login-panel panel panel-default">
                     <div class="panel-heading">
                         <center>
-                            <h3><b>Sistem Informasi Peminjaman Sarpras Sekolah</H3>
+                            <h4><b>Sistem Informasi Peminjaman Sarana dan Prasarana</H4>
                             <div class="mx-auto">
-                                <img src="<?= base_url('assets/landing_page_assets/img/auth.png') ?>" class="img" alt="" style="width: 400px">
+                                <img src="<?= base_url('assets/landing_page_assets/img/auth.png') ?>" class="img" alt="" style="width: 250px">
                             </div>
                             <h3 class="panel-title">Masuk ke akun anda</h3>
                         </center></b>

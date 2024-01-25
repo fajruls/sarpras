@@ -15,7 +15,7 @@
                                 </div>
                                 <div class="col-xs-9 text-right">
                                     <div class="huge"><?php echo $jml_barang ?></div>
-                                    <div>Jumlah Data Barang</div>
+                                    <div>Data Barang</div>
                                 </div>
                             </div>
                         </div>
